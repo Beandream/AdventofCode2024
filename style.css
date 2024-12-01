@@ -1,0 +1,139 @@
+html,
+body {
+  --bg-color: #343434;
+  --mg-color: #696969;
+  --fg-color: #a0a0a0;
+
+  --bg-shadow: #000000;
+
+  --fg-text-color: #fff;
+  --mg-text-color: #ccc;
+  --bg-text-color: #999;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI';
+}
+
+.headerContainer {
+  background-color: var(--fg-color);
+  color: var(--fg-text-color);
+  width: 25%;
+  min-width: 20rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 5px 5px 3px var(--bg-shadow);
+  border-radius: 4px;
+  padding-bottom: 0.5rem;
+}
+
+.header {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.header>span {
+  color: var(--mg-color);
+}
+
+.subHeader {
+  font-size: xx-large;
+  font-weight: bold;
+  color: var(--mg-text-color);
+  background-color: var(--mg-color);
+  vertical-align: top;
+  margin: 0.25rem auto;
+  width: max-content;
+  padding: 8px 2rem;
+  padding-top: 0px;
+  border-radius: 4px;
+  box-shadow: -2px -2px 4px var(--bg-shadow);
+}
+
+.card {
+  background-color: var(--fg-color);
+  color: var(--fg-text-color);
+  width: 50%;
+  min-width: 30rem;
+  min-height: 10rem;
+  margin: 2rem auto;
+  box-shadow: 5px 5px 3px var(--bg-shadow);
+  border-radius: 4px;
+  align-content: center;
+}
+
+.cardHeader {
+  margin: 1rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+.cardContent,
+.pageLink {
+  background-color: var(--mg-color);
+  color: var(--fg-text-color);
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: -2px -2px 4px var(--bg-shadow);
+  min-width: 75%;
+}
+
+.pageLink {
+  display: block;
+  font-family: 'Segoe UI';
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+
+.pageLink:hover {
+  background-color: var(--mg-text-color);
+  color: var(--mg-color);
+}
+
+.sections {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 6rem;
+  scrollbar-width: thin;
+  border: 2px solid var(--bg-color);
+  border-left: 12px solid var(--bg-color);
+  border-radius: 4px;
+  scrollbar-color: var(--fg-color) var(--bg-color);
+  box-shadow: -5px -7px 10px var(--mg-text-color) inset;
+  margin-bottom: 0.5rem;
+}
+
+.cardSection {
+  width: min-content;
+  white-space: pre;
+}
+
+.sectionHeaders {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.headerContainer:hover {
+  background-color: var(--bg-text-color);
+}
+
+.pageLinkDesc {
+  font-size: medium;
+  font-weight: normal;
+}

@@ -104,7 +104,8 @@ body {
   justify-content: space-evenly;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 6rem;
+  min-height: 6rem;
+  max-height: 33%;
   scrollbar-width: thin;
   border: 2px solid var(--bg-color);
   border-left: 12px solid var(--bg-color);

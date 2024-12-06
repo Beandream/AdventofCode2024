@@ -1,4 +1,4 @@
-function createSection(text, element) {
+function createSection(text = "", element) {
   let section = document.createElement("div");
   section.innerHTML = text;
   section.className = "cardSection";
